@@ -1,18 +1,15 @@
-import { useEffect, useState } from 'react'
 import './App.css'
-
-
+import { Box } from '@mui/material'
+import Header from './components/header/header'
 
 function App() {
-  const [count, setCount] = useState(0)
 
 
   return (
     <>
-
-      <div className="card">
-        <button onClick={()=>{setCount(count +1)}}>set {count}</button>
-      </div>
+      <Box >
+        <Header/>
+      </Box>
 
     </>
   )
