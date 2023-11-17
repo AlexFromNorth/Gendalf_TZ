@@ -27,4 +27,8 @@ If you are developing a production application, we recommend updating the config
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 
-react typescript scss materialUI reactform
+react: components, хуки 
+typescript: types for form
+scss: calc
+materialUI: components and styles, icons
+reactform: created form 

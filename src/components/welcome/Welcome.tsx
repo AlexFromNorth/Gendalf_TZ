@@ -18,7 +18,7 @@ const Welcome = () => {
       <Typography variant="h1" sx={{}}>
         Добро пожаловать в ГЭНДАЛЬФ!
       </Typography>
-      <Typography variant="h5" sx={{margin: '2% 0 4%'}}>
+      <Typography variant="h5" sx={{margin: '2% 0 4%', color: 'var(--white-text)'}}>
         Мы готовы поделиться секретом, почему любим компанию, в которой
         работаем. Если тебе будут близки наши ценности и идеи, то смело
         записывайся на собеседование!

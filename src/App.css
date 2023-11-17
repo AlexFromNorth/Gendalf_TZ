@@ -8,9 +8,12 @@ html{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  color: var(--black-text)!important;
+
 }
 
-.html, *, a{
+a, h1, button{
   color: var(--white-text)!important;
 }
 
