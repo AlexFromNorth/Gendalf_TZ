@@ -1,7 +1,7 @@
 import { Box, Button, Link } from "@mui/material";
 import React from "react";
 
-import logo from "../../assets/logo.png";
+import logo from "../../assets/header/logo.png";
 
 const Header = () => {
   return (
@@ -33,7 +33,6 @@ const Header = () => {
       <Button
         sx={{
           padding: "7px 14px 8px",
-          borderRadius: "5px",
           backgroundColor: "white",
           color: 'var(--azure-color)!important'
         }}

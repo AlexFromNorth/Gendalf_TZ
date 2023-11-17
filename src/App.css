@@ -13,3 +13,7 @@ html{
 .html, *, a{
   color: var(--white-text)!important;
 }
+
+button{
+  border-radius: 5px;
+}
