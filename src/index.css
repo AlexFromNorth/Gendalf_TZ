@@ -22,6 +22,10 @@
   );
   backdrop-filter: blur(3.5px);
 }
+.verticalCenter > div{
+  display: flex;
+  align-items: center;
+}
 
 
 /* reset */

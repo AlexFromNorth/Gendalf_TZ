@@ -1,0 +1,15 @@
+/* убираем ненужние стили аккордеона */
+
+.accordion {
+
+  &:before {
+    height: 0px!important;
+    background-color: white;
+  }
+
+  & div{
+    padding: 0;
+  }
+
+}
+
