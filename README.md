@@ -31,3 +31,7 @@ react: components, хуки, reactform
 typescript: types for form
 scss: calc
 materialUI: components and styles, icons
+
+
+
+<!-- переделать размер картинок с процента на пиксель -->

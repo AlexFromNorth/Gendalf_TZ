@@ -6,7 +6,7 @@ import ControlledAccordions from "./ControlledAccordions";
 
 const Answers = () => {
   return (
-    <Box className="gradient" sx={{ padding: "61px 14% 49px 5%" }}>
+    <Box className="gradient sectionWrapper" sx={{ paddingTop: "36px", paddingBottom: '35px' }}>
       <Box sx={{ display: "flex", justifyContent: "space-between" }}>
         <Box
           sx={{
@@ -17,7 +17,8 @@ const Answers = () => {
             variant="h5"
             sx={{
               color: "var(--azure-color)",
-              marginBottom: "43px",
+              marginBottom: "46px",
+              marginTop: '24px',
             }}
           >
             Ответы на вопросы
@@ -27,7 +28,7 @@ const Answers = () => {
         <Box
           component="img"
           sx={{
-            width: "50%",
+            width: "40%",
             backgroundSize: "cover",
           }}
           alt="Video"
