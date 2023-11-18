@@ -5,6 +5,7 @@ import Welcome from './components/welcome/Welcome'
 import Tasks from './components/tasks/Tasks'
 import Priorities from './components/priorities/Priorities'
 import Infrastructure from './components/infrastructure/Infrastructure'
+import Student from './components/student/Student'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Tasks/>
         <Priorities/>
         <Infrastructure/>
+        <Student/>
       </Box>
 
     </>
