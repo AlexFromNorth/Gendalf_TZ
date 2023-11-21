@@ -7,7 +7,7 @@ const Welcome = () => {
     <Box
       sx={{
         position: "relative",
-        padding: "10% 14% 0",
+        padding: "20% 14% 0",
         backgroundImage: `linear-gradient(rgba(0, 47, 61, 0.77), rgba(0, 47, 61, 0.77)), url(${bg})`,
         backgroundRepeat: 'no-repeat',
         height: 'calc(100vh - 101px)',

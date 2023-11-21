@@ -40,6 +40,8 @@ const Tasks = () => {
               backgroundColor: "var(--azure-color)",
               marginRight: "3%",
               padding: "15px 27px",
+              "&:hover": { color: 'var(--azure-color)!important' } // Moved the hover state inside a string
+
             }}
           >
             Почему мы
@@ -61,6 +63,7 @@ const Tasks = () => {
           component="img"
           sx={{
             width: "100%",
+            maxWidth: '600px'
           }}
           alt="Tasks"
           src={tasks}

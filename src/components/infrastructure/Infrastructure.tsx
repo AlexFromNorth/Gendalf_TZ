@@ -32,6 +32,7 @@ const Infrastructure = () => {
           component="img"
           sx={{
             width: "50%",
+            maxWidth: '800px',
             backgroundSize: 'cover',
           }}
           alt="Video"

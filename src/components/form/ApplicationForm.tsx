@@ -228,14 +228,13 @@ const ApplicationForm = () => {
         >
           <Box
             sx={{
-              padding: "14px 0",
+              padding: "14px 24px",
               borderRadius: "5px",
-              //   height: "100%",
               display: "flex",
               alignItems: "center",
               backgroundColor: "white",
               color: "var(--green-color)",
-            //   border: "1px solid var(--green-color)",
+              textAlign: 'center',
               borderColor: errors.attachment ? "red" : "green",
             }}
           >

@@ -1,7 +1,7 @@
-html{
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+html {
   line-height: 1.5;
   font-weight: 400;
+  font-style: normal;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,14 +9,41 @@ html{
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  color: var(--black-text)!important;
+  color: var(--black-text) !important;
+}
+html,
+* ,button{
+  font-size: 18px!important;
+  font-family: 'Open Sans', sans-serif!important;
 
 }
-
-a, h1, button{
-  color: var(--white-text)!important;
+a,
+h1,
+button {
+  color: var(--white-text) !important;
+}
+h1 {
+  font-family: Open Sans!important;
+  font-size: 64px!important;
+  font-style: normal;
+  font-weight: 700!important;
+}
+h4{
+  font-size: 36px!important;
+  font-weight: 300;
+}
+h5{
+  font-size: 25px!important;
+}
+h6{
+  font-size: 20px!important;
+  font-weight: 700!important;
+  text-decoration: underline;
 }
 
-button{
+button {
   border-radius: 5px;
+}
+button, input{
+  font-weight: 700!important;
 }

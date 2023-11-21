@@ -119,14 +119,13 @@ const CustomCarousel = () => {
             <Box
               component="img"
               sx={{
-                // height: 84,
-                width: '82%',
+                maxWidth: '600px',
                 margin: '0 auto'
               }}
               alt="Gendalf"
               src={item.img}
             />
-            <Typography variant="h6" sx={{}}>
+            <Typography variant="h6" sx={{margin: '10px 0 5px'}}>
               {item.label}
             </Typography>
             <Typography sx={{}}>{item.text}</Typography>

@@ -29,6 +29,7 @@ const Answers = () => {
           component="img"
           sx={{
             width: "40%",
+            maxWidth: '500px',
             backgroundSize: "cover",
           }}
           alt="Video"
