@@ -7,6 +7,7 @@ import Priorities from './components/priorities/Priorities'
 import Infrastructure from './components/infrastructure/Infrastructure'
 import Student from './components/student/Student'
 import Answers from './components/answers/Answers'
+import Form from './components/form/Form'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Infrastructure/>
         <Student/>
         <Answers/>
+        <Form/>
       </Box>
 
     </>

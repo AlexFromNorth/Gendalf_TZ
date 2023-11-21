@@ -1,0 +1,31 @@
+.form {
+  input,
+  textarea {
+    padding: 14px 56px 14px 16px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .customFileUpload {
+    cursor: pointer;
+    width: 39%;
+    border: 1px solid var(--green-color);
+
+    input[type="file"] {
+      display: none;
+    }
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  .customFileUpload > Box {
+    padding: 14px 0 14px 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+}
