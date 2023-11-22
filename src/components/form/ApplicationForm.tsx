@@ -17,6 +17,7 @@ import {
 
 import error from "../../assets/form/false.png";
 import success from "../../assets/form/true.png";
+import file from "../../assets/form/file.png";
 
 import style from "./form.module.scss";
 import {
@@ -219,13 +220,18 @@ const ApplicationForm = () => {
           justifyContent: "space-between",
           marginTop: "17px",
           width: "100%",
-        //   border: '1px solid var(--green-color)',
+          "@media screen and (max-width: 1140px)": {
+            "& ": {
+              flexDirection: "column",
+            },
+            "& > *": {
+              width: "100%!important",
+              marginTop: '10px!important',
+            },
+          },
         }}
       >
-        <label
-          htmlFor="file-upload"
-          className={style.customFileUpload}
-        >
+        <label htmlFor="file-upload" className={style.customFileUpload}>
           <Box
             sx={{
               padding: "14px 24px",
@@ -234,7 +240,7 @@ const ApplicationForm = () => {
               alignItems: "center",
               backgroundColor: "white",
               color: "var(--green-color)",
-              textAlign: 'center',
+              textAlign: "center",
               borderColor: errors.attachment ? "red" : "green",
             }}
           >
@@ -245,19 +251,13 @@ const ApplicationForm = () => {
               className={style.fileInput}
             />
             Прикрепить резюме
-            {errors.attachment ? (
+            
               <img
-                src={error}
-                alt="error"
+                src={file}
+                alt="file"
                 style={{ marginLeft: "auto", paddingRight: "5px" }}
               />
-            ) : (
-              <img
-                src={success}
-                alt="success"
-                style={{ marginLeft: "auto", paddingRight: "5px" }}
-              />
-            )}
+
           </Box>
         </label>
 
@@ -265,7 +265,11 @@ const ApplicationForm = () => {
           onClick={() => setFormToggle(true)}
           variant="contained"
           type="submit"
-          sx={{ backgroundColor: "var(--green-color)", width: "60%" }}
+          sx={{
+            backgroundColor: "var(--green-color)",
+            width: "60%",
+            "&:hover": { backgroundColor: "var(--green-color)!important" },
+          }}
         >
           Оставить заявку
         </Button>

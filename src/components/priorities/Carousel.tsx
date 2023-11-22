@@ -59,13 +59,13 @@ const CustomCarousel = () => {
     autoplay: false, // Отключаем автопрокрутку
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 900,
         settings: {
           slidesToShow: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 700,
         settings: {
           slidesToShow: 1,
         },

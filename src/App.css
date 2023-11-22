@@ -12,10 +12,16 @@ html {
   color: var(--black-text) !important;
 }
 html,
-* ,button{
-  font-size: 18px!important;
-  font-family: 'Open Sans', sans-serif!important;
-
+*,
+button {
+  font-size: 18px !important;
+  font-family: "Open Sans", sans-serif !important;
+}
+header {
+  box-shadow: none!important;
+}
+header *{
+  padding: 0!important
 }
 a,
 h1,
@@ -23,27 +29,68 @@ button {
   color: var(--white-text) !important;
 }
 h1 {
-  font-family: Open Sans!important;
-  font-size: 64px!important;
+  font-family: Open Sans !important;
+  font-size: 64px !important;
   font-style: normal;
-  font-weight: 700!important;
+  font-weight: 700 !important;
 }
-h4{
-  font-size: 36px!important;
+h4 {
+  font-size: 36px !important;
   font-weight: 300;
 }
-h5{
-  font-size: 25px!important;
+h5 {
+  font-size: 25px !important;
 }
-h6{
-  font-size: 20px!important;
-  font-weight: 700!important;
+h6 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
   text-decoration: underline;
 }
 
 button {
   border-radius: 5px;
 }
-button, input{
-  font-weight: 700!important;
+button,
+input {
+  font-weight: 700 !important;
+}
+
+/* effect hovers */
+
+.underline-link {
+  color: #00bfff; /* Цвет обычной ссылки */
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-link:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px; /* Высота линии */
+  background-color: var(
+    --white-text
+  ); /* Цвет подчеркивания при исчезании линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-link:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px; /* Высота линии */
+  background-color: var(
+    --white-text
+  ); /* Цвет подчеркивания при появлении линии*/
+  transition: width 0.5s; /* Время эффекта */
+}
+
+.slick-next, .slick-prev{
+  display: none!important;
 }

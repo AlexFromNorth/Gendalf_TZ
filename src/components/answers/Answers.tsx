@@ -11,6 +11,9 @@ const Answers = () => {
         <Box
           sx={{
             width: "40%",
+            "@media screen and (max-width: 1140px)": {
+              '&':{width: '100%'},
+            },
           }}
         >
           <Typography
@@ -31,6 +34,9 @@ const Answers = () => {
             width: "40%",
             maxWidth: '500px',
             backgroundSize: "cover",
+            "@media screen and (max-width: 1140px)": {
+              display: "none",
+            },
           }}
           alt="Video"
           src={answers_img}

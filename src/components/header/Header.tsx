@@ -12,6 +12,9 @@ const Header = () => {
         justifyContent: "space-between",
         height: "101px",
         alignItems: "center",
+        "@media screen and (max-width: 1140px)": {
+          display: "none",
+        },
       }}
       className="sectionWrapper"
     >
@@ -24,17 +27,18 @@ const Header = () => {
         alt="Gendalf"
         src={logo}
       />
-      <Link href="#">Профориентация </Link>
-      <Link href="#">Выбрать вакансию</Link>
-      <Link href="#">Карьера в ГЭНДАЛЬФ</Link>
-      <Link href="#">Стажерство</Link>
-      <Link href="#">Отзывы</Link>
+      <Link href="#" className="underline-link">Профориентация </Link>
+      <Link href="#" className="underline-link">Выбрать вакансию</Link>
+      <Link href="#" className="underline-link">Карьера в ГЭНДАЛЬФ</Link>
+      <Link href="#" className="underline-link">Стажерство</Link>
+      <Link href="#" className="underline-link">Отзывы</Link>
 
       <Button
         sx={{
           padding: "7px 14px 8px",
           backgroundColor: "white",
-          color: 'var(--azure-color)!important'
+          color: 'var(--azure-color)!important',
+          "&:hover": { color: 'var(--white-text)!important' } 
         }}
       >
         Запись на собеседование
