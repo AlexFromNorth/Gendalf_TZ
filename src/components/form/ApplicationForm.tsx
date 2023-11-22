@@ -38,13 +38,14 @@ const ApplicationForm = () => {
   const onSubmit = (data) => {
     // Обработка данных формы
     console.log(data);
-  };
+  }; 
 
   return (
     <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
       <Box sx={{ position: "relative" }}>
         <TextField
           label="Как к вам обращаться?"
+
           sx={{
             display: "flex",
             textAlign: "center",
